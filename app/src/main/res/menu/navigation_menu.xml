@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- <?xml version="1.0" encoding="utf-8"?>
+     <selector xmlns:android="http://schemas.android.com/apk/res/android">
+         <item android:color="@color/pink" android:state_checked="true" />
+         <item android:color="@color/black" />
+     </selector>
+ -->
+
+    <group android:id="@+id/trtground1"
+        android:checkableBehavior="single">
+
+        <item android:id="@+id/account"
+            android:checked="true"
+            android:title="Manage Profile" />
+
+        <item android:id="@+id/paccount"
+            android:checked="true"
+            android:title="My Profile" />
+
+        <item android:id="@+id/caccount"
+            android:checked="true"
+            android:title="Sub Profile" />
+    </group>
+    <group android:id="@+id/trtground7"
+        android:checkableBehavior="single">
+        <item android:id="@+id/treatment"
+            android:checked="true"
+            android:title="Treatment"/>
+
+        <item android:id="@+id/analytics"
+            android:checked="true"
+
+            android:title="Analytics"/>
+
+        <item android:id="@+id/healthmeter"
+            android:checked="true"
+            android:title="Health Meter"/>
+    </group>
+
+    <group android:id="@+id/entground2"
+        android:checkableBehavior="single">
+
+        <item android:id="@+id/enterntainment"
+            android:checked="true"
+
+            android:title="Entertainment"/>
+
+        <item android:id="@+id/healthtips"
+            android:checked="true"
+            android:title="Health Tips"/>
+
+        <item android:id="@+id/gamservices"
+            android:checked="true"
+            android:title="Gam services"/>
+    </group>
+    <group
+        android:id="@+id/entground3"
+        android:checkableBehavior="single">
+
+        <item android:id="@+id/news"
+            android:checked="true"
+            android:title="News"/>
+
+        <item android:id="@+id/settings"
+            android:checked="true"
+            android:title="Settings"/>
+    </group>
+    <item android:id="@+id/mycart"
+        android:title="My Cart"/>
+
+</menu>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.kevalpatel2106:passcodeview-2.0.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/passcodeview-2.0.0.aar/40643e185f0f13d4f4549d046dfcb469/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/passcodeview-2.0.0.aar/40643e185f0f13d4f4549d046dfcb469/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.kevalpatel2106/passcodeview/2.0.0/2e317bfa0c6065be36940635619bc51531f20278/passcodeview-2.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

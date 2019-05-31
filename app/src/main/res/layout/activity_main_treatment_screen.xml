@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".activity.MainTreatmentScreen">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imghuman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/human" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardnew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            android:layout_margin="5dp"
+            cardPreventCornerOverlap="false"
+            android:layout_below="@+id/imghuman">
+
+            <!--Right and left hand device-->
+            <LinearLayout
+                android:id="@+id/llleftright"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:layout_width="190dp"
+                    android:layout_height="40dp"
+                    android:text="Right Hand  Device"
+                    android:shadowColor="@color/black"
+                    android:textAlignment="center"
+                    android:background="#f8a519"
+                    />
+                <Button
+                    android:layout_width="190dp"
+                    android:layout_height="40dp"
+                    android:text="Left Hand  Device"
+                    android:textAlignment="center"
+                    android:background="#f8a519"
+                    android:layout_marginLeft="30dp"
+                    />
+            </LinearLayout>
+
+            <!--Tretment cycle-->
+            <LinearLayout
+                android:layout_marginTop="@dimen/title_50dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:textSize="20sp"
+                    android:text="@string/treatmentcycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="80dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="1">
+
+                <android.support.v7.widget.CardView
+                    app:cardCornerRadius="5dp"
+                    app:cardPreventCornerOverlap="false"
+                    android:layout_margin="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/txtcycle1"
+                            android:text="Cycle 1(5m): Done"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/txtcycle2"
+                            android:text="Cycle 1(5m): Pending"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtcycle1"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold"/>
+
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    app:cardCornerRadius="5dp"
+                    app:cardPreventCornerOverlap="false"
+                    android:layout_margin="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/txtcycle11"
+                            android:text="Cycle 1(5m): 2.5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold"
+                            android:textColor="#f8a519"/>
+
+                        <TextView
+                            android:id="@+id/txtcycle12"
+                            android:text="Cycle 1(5m): Pending"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtcycle11"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold"/>
+
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <!--Linear layout of 1 treatment cycle closed-->
+            <!--Bp reading-->
+            <LinearLayout
+                android:layout_marginTop="160dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="BP Reading"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="190dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="1">
+
+                <android.support.v7.widget.CardView
+                    app:cardCornerRadius="5dp"
+                    app:cardPreventCornerOverlap="false"
+                    android:layout_margin="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/txtbpcycle1"
+                            android:text="SYS(mmhg): 100"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/txtbpcycle2"
+                            android:text="DIA(mmhg): 100"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtcycle1"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/txtbpcycle3"
+                            android:text="PULSE : 100"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtcycle1"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold"/>
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    app:cardCornerRadius="5dp"
+                    app:cardPreventCornerOverlap="false"
+                    android:layout_margin="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtbpcycle11"
+                            android:text="SYS(mmhg): "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/txtbpcycle12"
+                            android:text="DIA(mmhg): "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtcycle1"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/txtbpcycle13"
+                            android:text="PULSE : "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtcycle1"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="300dp"
+                android:layout_gravity="center_horizontal">
+
+                <ImageButton
+                    android:padding="2dp"
+                    android:id="@+id/imageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circularstyle"
+                    app:srcCompat="@android:drawable/ic_input_add" />
+            </FrameLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_below="@+id/cardnew"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginRight="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="#000"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:backgroundTint="@color/white"
+                    android:background="@drawable/home_blue_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:text="Home"
+                    android:textColor="#ffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginRight="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="#000"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:background="@drawable/ic_arrow_forward_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtlogs"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:textColor="#ffffff"
+                    android:text="Logs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

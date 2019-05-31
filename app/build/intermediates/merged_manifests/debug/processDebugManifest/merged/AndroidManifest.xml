@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.myapplication"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="28" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.USE_FINGERPRINT" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.user.myapplication.activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.user.myapplication.activity.ScrollingActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.user.myapplication.activity.slider"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.user.myapplication.activity.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name="com.example.user.myapplication.activity.PurchaseActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.user.myapplication.activity.InstrucTwoActivity" />
+        <activity android:name="com.example.user.myapplication.activity.ScanActivity" />
+        <activity android:name="com.example.user.myapplication.activity.LoginActivity" />
+        <activity android:name="com.example.user.myapplication.activity.LogActivity" />
+        <activity android:name="com.example.user.myapplication.activity.InstructionActivity3" />
+        <activity android:name="com.example.user.myapplication.activity.InsertActivity" />
+        <activity android:name="com.example.user.myapplication.activity.Pin" />
+        <activity android:name="com.example.user.myapplication.activity.SetPin" />
+        <activity android:name="com.example.user.myapplication.activity.Home" />
+        <activity android:name="com.example.user.myapplication.activity.InstructionAVI" />
+        <activity android:name="com.example.user.myapplication.activity.PurchaseActivity1" />
+        <activity android:name="com.example.user.myapplication.activity.SippingActivity" />
+        <activity android:name="com.example.user.myapplication.activity.Card" />
+        <activity android:name="com.example.user.myapplication.activity.Blog" />
+        <activity
+            android:name="com.example.user.myapplication.activity.Yes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.user.myapplication.activity.Register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.user.myapplication.activity.ForgotPin" />
+        <activity android:name="com.example.user.myapplication.activity.OTP" />
+        <activity android:name="com.example.user.myapplication.activity.AuthenticationLogin" />
+        <activity android:name="com.example.user.myapplication.activity.LogFinal" />
+        <activity android:name="com.example.user.myapplication.activity.Slider2" />
+        <activity android:name="com.example.user.myapplication.activity.RegisteredDeviceSrc" />
+        <activity
+            android:name="com.example.user.myapplication.activity.ManageSelfProfile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.user.myapplication.activity.ManageChildProfile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.user.myapplication.activity.CreateChild" />
+        <activity
+            android:name="com.example.user.myapplication.activity.HealthMone"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.user.myapplication.activity.ChildRegister"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.user.myapplication.activity.StartTretment" />
+        <activity android:name="com.example.user.myapplication.activity.MainTreatmentScreen" />
+        <activity android:name="com.example.user.myapplication.activity.TreatmentResult" />
+        <activity android:name="com.example.user.myapplication.activity.PurchaseCart" />
+        <activity android:name="com.example.user.myapplication.activity.SippingActivity2" />
+        <activity
+            android:name="com.example.user.myapplication.activity.PaymentAsk"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.user.myapplication.activity.TretmentuserConfirm"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.user.myapplication.activity.NewOrExistingUser"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.OTP">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtotphead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OTP is Sent to Previous User's Registered Mobile Number and Email ID"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:textSize="20dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:gravity="center_horizontal"
+            android:foregroundGravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtplzotp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please Enter OTP"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_horizontal"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                >
+                <ImageView
+                    android:id="@+id/imageview_circle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:src="@drawable/circle"
+                    />
+                <ImageView
+                    android:id="@+id/imageview_circle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:src="@drawable/circle"
+                    />
+                <ImageView
+                    android:id="@+id/imageview_circle3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:src="@drawable/circle"
+                    />
+                <ImageView
+                    android:id="@+id/imageview_circle4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:src="@drawable/circle"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        //for enter OTP
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <EditText
+                android:id="@+id/editText_enter_mpin"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textDirection="firstStrong"
+                android:maxLength="4"
+                android:backgroundTint="@color/black"
+                android:visibility="visible"
+                android:textCursorDrawable="@color/black">
+            </EditText>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

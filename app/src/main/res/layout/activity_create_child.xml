@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    app:behavior_overlapTop="@dimen/margin_32dp"
+    tools:context=".activity.CreateChild">
+    <!--  First Child of Parent -->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:tag="cards main container"
+        android:id="@+id/cid">
+        <TextView
+            android:id="@+id/txtcreatechild1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:text="As Per Policy , You Can Create Two Child Users"
+            />
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view1"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="10dp"
+        card_view:cardBackgroundColor="#ffffff"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true"
+        android:padding="@dimen/title_50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="10sp"
+                android:layout_weight="2"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+               <!-- <TextView
+                    android:id="@+id/txtset1stchild"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:textSize="17sp"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    />-->
+                <Button
+                    android:id="@+id/btnchild1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="40dp"
+
+                    android:background="@android:drawable/dialog_holo_light_frame"
+                    android:backgroundTint="#f8a519"
+                    android:text="@string/firstchild"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view2"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            card_view:cardBackgroundColor="#ffffff"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="5dp"
+            card_view:cardUseCompatPadding="true"
+            android:padding="@dimen/title_50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+                    <!--<TextView
+                        android:id="@+id/txtset2stchild"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textAlignment="center"
+                        android:textSize="17sp"
+                        android:layout_marginTop="10dp"
+                        android:text=""
+                        />-->
+                    <Button
+                        android:id="@+id/btnchild2"
+                        android:layout_width="match_parent"
+                        android:layout_margin="40dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@android:drawable/dialog_holo_light_frame"
+                        android:backgroundTint="#f8a519"
+                        android:textColor="@color/black"
+                        android:text="@string/secondchild" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view3"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            card_view:cardBackgroundColor="#ffffff"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="4dp"
+            card_view:cardUseCompatPadding="true"
+            android:padding="@dimen/title_50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnpremium"
+                        android:layout_width="match_parent"
+                        android:layout_margin="40dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="-20dp"
+                        android:layout_gravity="center"
+                        android:background="@android:drawable/dialog_holo_light_frame"
+                        android:backgroundTint="#f8a519"
+                        android:textColor="@color/black"
+                        android:text="@string/purchaselicence" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

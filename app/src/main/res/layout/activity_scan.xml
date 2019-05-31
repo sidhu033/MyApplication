@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.ScanActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints">
+
+        <!--Button
+            android:id="@+id/btnScan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_16dp" /-->
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="45dp"
+            android:singleLine="true"
+            android:text="@string/scan_yout_qr_code"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="125dp"
+            tools:layout_editor_absoluteY="154dp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="@string/scan_yout_qr_codeinstru"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <!--android:layout_marginTop="-30dp"-->
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="@dimen/margin_100dp"
+            android:layout_height="@dimen/margin_100dp"
+            android:layout_gravity="center"
+             android:src="@drawable/qrcode"/>
+
+        <Button
+            android:id="@+id/btnscannow"
+            android:layout_width="144dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:backgroundTint="#f8a519"
+            android:fontFamily="HelveticaNeue"
+            android:text="@string/scannow"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/txtprodctid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="OR Enter Product Id Here"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:layout_marginBottom="30dp"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/editprodctid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:hint="Enter Product Id Here."
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            />
+        <View
+            android:layout_marginRight="@dimen/margin_8dp"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            android:layout_marginStart="50dp"
+            android:layout_width="250dp"
+            android:layout_height="1dp"
+            android:background="@color/black"/>
+
+        <Button
+            android:id="@+id/btnscanlogin"
+            android:layout_width="144dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="40dp"
+            android:inputType="text"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:backgroundTint="#f8a519"
+            android:fontFamily="HelveticaNeue"
+            android:text="Enter"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+</RelativeLayout>

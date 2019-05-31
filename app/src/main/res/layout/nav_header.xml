@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg"
+    android:theme="@style/AppTheme.AppBarOverlay"
+    android:gravity="center"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtnewdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-80dp"
+        android:layout_marginLeft="40dp"
+        android:fontFamily=""
+        android:paddingTop="30dp"
+        android:layout_gravity="start"
+        android:text="current date"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="80dp"
+        android:src="@drawable/user" />
+
+    <TextView
+        android:id="@+id/nvtxtuname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="USERNAME"
+        android:fontFamily="@font/elemental_end"
+        android:textColor="@color/white" />
+
+</LinearLayout>

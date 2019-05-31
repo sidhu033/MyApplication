@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.PurchaseActivity1">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.PurchaseActivity1">
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/purchasecart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:padding="20dp"
+        cardElevation="15dp"
+        cardUseCompatPadding="true">
+        <LinearLayout
+            android:padding="0dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/title_50dp"
+                android:layout_marginLeft="@dimen/title_50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="@dimen/title_50dp"
+                android:layout_marginRight="@dimen/title_50dp"
+                android:fontFamily="Georgia"
+                android:gravity="top"
+                android:paddingTop="0dp"
+                android:text="@string/product_details"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="330dp"
+                android:layout_marginTop="@dimen/dp10"
+                android:scaleType="centerCrop"
+                android:scrollbarSize="@dimen/margin_4dp"
+                app:srcCompat="@drawable/deviceshadow" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/dp10">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Georgia"
+                    android:gravity="center"
+                    android:text="Price :"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/txtprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Georgia"
+                    android:gravity="center"
+                    android:text="1800/-"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/purchasecart">
+        <Button
+            android:id="@+id/itemadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/additems"/>
+
+        <TextView
+            android:id="@+id/txtitems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/itemremove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/removeitems"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linLayTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_8dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnPlace"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:backgroundTint="#f8a519"
+            android:fontFamily="HelveticaNeue"
+            android:text="Buy For Rs.1800"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtnoticount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/item_count"
+            android:layout_alignRight="@+id/btnfloatingcart"
+            />
+
+        <com.example.user.myapplication.customactivity.MovableFloatingActionButton
+            android:id="@+id/btnfloatingcart"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/cart"
+            android:background="@drawable/cart"
+            android:contextClickable="true">
+
+
+        </com.example.user.myapplication.customactivity.MovableFloatingActionButton>
+
+
+
+    <!-- <android.support.design.widget.FloatingActionButton
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_alignParentRight="true"
+         android:backgroundTint="#f8a519"
+         android:src="@drawable/cart" />-->
+
+</RelativeLayout>
+</FrameLayout>
+
