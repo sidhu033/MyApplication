@@ -25,6 +25,7 @@ import com.example.user.myapplication.activity.Pin;
 import com.example.user.myapplication.activity.PurchaseActivity;
 import com.example.user.myapplication.activity.PurchaseActivity1;
 import com.example.user.myapplication.activity.ScrollingActivity;
+import com.example.user.myapplication.activity.Setting;
 
 import java.util.List;
 
@@ -101,6 +102,11 @@ public class MenusAdapter extends RecyclerView.Adapter<MenusAdapter.MenusHolder>
                    mActivity.startActivity(intent);
 
                }
+               else if(position == 4)
+              {
+                  Intent settingintent = new Intent(mActivity.getApplicationContext(),Setting.class);
+                  mActivity.startActivity(settingintent);
+              }
            }
        });
 

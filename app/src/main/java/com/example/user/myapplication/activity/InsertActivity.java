@@ -6,8 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-import com.example.user.myapplication.AddReading;
-import com.example.user.myapplication.FeedReaderContract;
+import com.example.user.myapplication.pojo.FeedReaderContract;
 import com.example.user.myapplication.FeedReaderDbHelper;
 import com.example.user.myapplication.R;
 

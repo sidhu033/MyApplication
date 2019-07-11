@@ -14,7 +14,7 @@ import java.lang.Override;
 public class InstructionAVI_ViewBinding implements Unbinder {
   private InstructionAVI target;
 
-  private View view7f0a0058;
+  private View view7f0a0066;
 
   @UiThread
   public InstructionAVI_ViewBinding(InstructionAVI target) {
@@ -27,7 +27,7 @@ public class InstructionAVI_ViewBinding implements Unbinder {
 
     View view;
     view = Utils.findRequiredView(source, R.id.btnskip, "method 'pinSubmit'");
-    view7f0a0058 = view;
+    view7f0a0066 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -43,7 +43,7 @@ public class InstructionAVI_ViewBinding implements Unbinder {
     target = null;
 
 
-    view7f0a0058.setOnClickListener(null);
-    view7f0a0058 = null;
+    view7f0a0066.setOnClickListener(null);
+    view7f0a0066 = null;
   }
 }

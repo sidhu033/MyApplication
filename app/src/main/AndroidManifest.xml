@@ -97,8 +97,20 @@
         <activity
             android:name=".activity.TretmentuserConfirm"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activity.NewOrExistingUser"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".activity.NewOrExistingUser"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".activity.Setting" />
+
+        <activity
+            android:name=".activity.PaymentUpdate"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.PaymentProcess"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.UserProfiles"></activity>
+
     </application>
 
 </manifest>

@@ -112,6 +112,14 @@
         <activity
             android:name="com.example.user.myapplication.activity.NewOrExistingUser"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.user.myapplication.activity.Setting" />
+        <activity
+            android:name="com.example.user.myapplication.activity.PaymentUpdate"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.user.myapplication.activity.PaymentProcess"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.user.myapplication.activity.UserProfiles" />
     </application>
 
 </manifest>
